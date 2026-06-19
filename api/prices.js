@@ -13,15 +13,15 @@ export default function handler(req, res) {
       dragonstar: "12500円"
     },
     ミュウ: {
-    cardrush: "3000円",
-    hareruya: "2800円",
-    dragonstar: "3200円"
-  },
-  イーブイ: {
-    cardrush: "800円",
-    hareruya: "750円",
-    dragonstar: "900円"
-  }
+      cardrush: "3000円",
+      hareruya: "2800円",
+      dragonstar: "3200円"
+    },
+    イーブイ: {
+      cardrush: "800円",
+      hareruya: "750円",
+      dragonstar: "900円"
+    }
   };
 
   res.status(200).json(
