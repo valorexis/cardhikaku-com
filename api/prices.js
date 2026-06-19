@@ -1,5 +1,6 @@
 export default function handler(req, res) {
   const { card } = req.query;
+  const cardName = card?.trim();
 
   const prices = {
     ピカチュウ: {
@@ -25,7 +26,7 @@ export default function handler(req, res) {
   };
 
   res.status(200).json(
-    prices[card] || {
+    prices[cardName] || {
       cardrush: "データなし",
       hareruya: "データなし",
       dragonstar: "データなし"
